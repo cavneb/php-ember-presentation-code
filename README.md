@@ -78,7 +78,7 @@ Migration table created successfully.
 Migrated: 2014_07_17_004427_create_bronies_table
 ```
 
-### Create model at `app/models/bronie.php`:
+### Create model at `app/models/Bronie.php`:
 
 ```php
 <?php
@@ -96,7 +96,7 @@ $ php artisan controller:make BronieController
 
 ### Add Bronies to routes
 
-```php routes.php
+```php
 ...
 Route::resource('bronies', 'BronieController');
 ```
@@ -185,7 +185,7 @@ public function index()
 
 Now open up the browser and refresh!
 
-### Update
+### Store
 
 Add the following into your `store` function:
 

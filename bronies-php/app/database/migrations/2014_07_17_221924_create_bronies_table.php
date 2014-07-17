@@ -12,15 +12,15 @@ class CreateBroniesTable extends Migration {
 	 */
 	public function up()
 	{
-    Schema::create('bronies', function(Blueprint $table)
+		Schema::create('bronies', function(Blueprint $table)
     {
-      $table->increments('id');
+        $table->increments('id');
 
-      $table->string('name', 255);
-      $table->string('email', 255);
-      $table->integer('pony_name');
+        $table->string('name', 255);
+        $table->string('email', 255);
+        $table->integer('pony_name');
 
-      $table->timestamps();
+        $table->timestamps();
     });
 	}
 
@@ -31,7 +31,7 @@ class CreateBroniesTable extends Migration {
 	 */
 	public function down()
 	{
-    Schema::drop('bronies');
+		Schema::drop('bronies');
 	}
 
 }
