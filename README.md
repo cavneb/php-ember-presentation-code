@@ -219,20 +219,20 @@ You can test this out using cURL:
 
 ```bash
 curl -i \
-       -X POST \
-       -H "Accept: applicaton/json" \
-       -d "" \
-       http://localhost:8000/bronies
+     -X POST \
+     -H "Accept: applicaton/json" \
+     -d "" \
+     http://localhost:8000/bronies
 ```
 
 The prior cURL request will return an error response because of missing required params. Let's try with all required fields:
 
 ```bash
 curl -i \
-       -X POST \
-       -H "Accept: applicaton/json" \
-       -d "name=Eric&email=cavneb@gmail.com&pony_name=Stallion" \
-       http://localhost:8000/bronies
+     -X POST \
+     -H "Accept: applicaton/json" \
+     -d "name=Eric&email=cavneb@gmail.com&pony_name=Stallion" \
+     http://localhost:8000/bronies
 ```
 
 Now you can revisit the browser and it should return data when visiting /bronies
@@ -294,10 +294,10 @@ You can test this out with the cURL command:
 
 ```bash
 curl -i \
-       -X PUT \
-       -H "Accept: applicaton/json" \
-       -d "name=John&email=john@gmail.com&pony_name=Taco" \
-       http://localhost:8000/bronies/1
+     -X PUT \
+     -H "Accept: applicaton/json" \
+     -d "name=John&email=john@gmail.com&pony_name=Taco" \
+     http://localhost:8000/bronies/1
 ```
 
 ### Delete a Bronie, yo!
@@ -321,6 +321,6 @@ You can test this out with the cURL command:
 
 ```bash
 curl -i \
-       -X DELETE \
-       http://localhost:8000/bronies/1
+     -X DELETE \
+     http://localhost:8000/bronies/1
 ```
